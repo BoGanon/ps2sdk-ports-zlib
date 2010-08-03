@@ -43,7 +43,7 @@ build() {
   make || return 1
   make DESTDIR=$pkgdir install || return 1
 
-  # Install license for gsKit
+  # Install license for zlib
   install -m755 -D $srcdir/zlib-$pkgver/README $pkgdir/usr/share/licenses/$pkgname/README
 
 }
