@@ -5,7 +5,7 @@ EE_OBJS = adler32.o compress.o crc32.o deflate.o gzclose.o gzlib.o gzread.o \
 EE_LIB = $(LIB_Z)
 EE_INCS  = -I.
 
-ZLIB_TEST_OBJS = example.o
+ZLIB_TEST_OBJS = test/example.o
 ZLIB_TEST_BIN = example.elf
 ZLIB_TEST_CFLAGS = -I.
 ZLIB_TEST_LIBS = libz.a -lc -lkernel
